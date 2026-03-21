@@ -27,6 +27,17 @@ export default function Home() {
           </a>
         </div>
       </section>
+      <div className="mt-12 flex flex-wrap justify-center gap-6 text-sm text-gray-500">
+        <a href="/about" className="hover:underline">
+          このサイトについて
+        </a>
+        <a href="/privacy" className="hover:underline">
+          プライバシーポリシー
+        </a>
+        <a href="/contact" className="hover:underline">
+          お問い合わせ
+        </a>
+      </div>
     </main>
   );
 }
