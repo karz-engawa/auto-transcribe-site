@@ -89,6 +89,14 @@ export default function Mp3ToMidiPage() {
                 ツールページへ
               </a>
             </div>
+            <div className="mt-6 rounded-2xl bg-black p-6 text-white">
+              <p className="mb-3 text-lg font-bold">
+                実際にMP3→MIDI変換を試してみる
+              </p>
+              <a href="/tool" className="inline-block bg-white text-black px-4 py-2 rounded">
+                無料で試す
+              </a>
+            </div>
           </section>
 
           <section>
@@ -124,6 +132,9 @@ export default function Mp3ToMidiPage() {
             <p>
               まずは実際にツールを試してみて、どの程度使えるかを確認するのがおすすめです。
             </p>
+            <a href="/articles" className="text-blue-600 underline">
+              他の記事を見る
+            </a>
           </section>
         </div>
       </article>
