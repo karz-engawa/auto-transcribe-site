@@ -23,6 +23,12 @@ const articles = [
     description:
       "MIDIとは何か、MP3やWAVとの違い、できること・できないことを初心者向けにわかりやすく整理します。",
   },
+  {
+    href: "/articles/auto-transcription-tools",
+    title: "自動採譜ツール比較｜MP3からMIDI変換できるおすすめ方法を解説",
+    description:
+      "自動採譜ツールの選び方、使い方、MP3からMIDI変換するときの注意点を初心者向けに解説します。",
+  },
 ];
 
 export default function ArticlesPage() {
