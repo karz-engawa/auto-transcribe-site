@@ -70,6 +70,18 @@ export default function Home() {
               MP3からMIDI変換できるツールの考え方を解説します。
             </p>
           </a>
+
+          <a
+            href="/articles/piano-to-midi"
+            className="rounded-2xl border border-gray-200 p-5 transition hover:border-blue-300 hover:shadow-sm"
+          >
+            <h3 className="text-lg font-semibold">
+              ピアノ音源をMIDI化する方法
+            </h3>
+            <p className="mt-2 text-sm text-gray-600">
+              ピアノ音源をMIDIに変換する方法とコツを解説します。
+            </p>
+          </a>
         </div>
 
         <div className="mt-8 text-center">

@@ -29,6 +29,11 @@ const articles = [
     description:
       "自動採譜ツールの選び方、使い方、MP3からMIDI変換するときの注意点を初心者向けに解説します。",
   },
+  {
+    href: "/articles/piano-to-midi",
+    title: "ピアノ音源をMIDI化する方法",
+    description: "ピアノ音源をMIDIに変換する方法とコツを解説",
+  },
 ];
 
 export default function ArticlesPage() {
