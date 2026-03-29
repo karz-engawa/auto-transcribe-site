@@ -27,7 +27,62 @@ export default function Home() {
           </a>
         </div>
       </section>
-      <div className="mt-12 flex flex-wrap justify-center gap-6 text-sm text-gray-500">
+
+      <section className="mx-auto max-w-5xl px-6 py-16 md:px-8">
+        <h2 className="text-3xl font-bold text-center">最新記事</h2>
+        <p className="mt-3 text-center text-gray-600">
+          自動採譜・MIDIに関する記事を更新しています。
+        </p>
+
+        <div className="mt-8 grid gap-6 md:grid-cols-3">
+          <a
+            href="/articles/mp3-to-midi"
+            className="rounded-2xl border border-gray-200 p-5 transition hover:border-blue-300 hover:shadow-sm"
+          >
+            <h3 className="text-lg font-semibold">
+              MP3をMIDIに変換する方法
+            </h3>
+            <p className="mt-2 text-sm text-gray-600">
+              音声ファイルからMIDIへ変換する基本を解説します。
+            </p>
+          </a>
+
+          <a
+            href="/articles/what-is-midi"
+            className="rounded-2xl border border-gray-200 p-5 transition hover:border-blue-300 hover:shadow-sm"
+          >
+            <h3 className="text-lg font-semibold">
+              MIDIとは？MP3との違いを解説
+            </h3>
+            <p className="mt-2 text-sm text-gray-600">
+              MIDIの仕組みや特徴を初心者向けに解説します。
+            </p>
+          </a>
+
+          <a
+            href="/articles/auto-transcription-tools"
+            className="rounded-2xl border border-gray-200 p-5 transition hover:border-blue-300 hover:shadow-sm"
+          >
+            <h3 className="text-lg font-semibold">
+              自動採譜ツール比較
+            </h3>
+            <p className="mt-2 text-sm text-gray-600">
+              MP3からMIDI変換できるツールの考え方を解説します。
+            </p>
+          </a>
+        </div>
+
+        <div className="mt-8 text-center">
+          <a
+            href="/articles"
+            className="inline-block rounded-xl bg-blue-600 px-6 py-3 font-semibold text-white hover:bg-blue-700"
+          >
+            すべての記事を見る
+          </a>
+        </div>
+      </section>
+
+      <div className="mt-12 flex flex-wrap justify-center gap-6 pb-12 text-sm text-gray-500">
         <a href="/about" className="hover:underline">
           このサイトについて
         </a>
