@@ -36,30 +36,6 @@ export default function Home() {
 
         <div className="mt-8 grid gap-6 md:grid-cols-3">
           <a
-            href="/articles/mp3-to-midi"
-            className="rounded-2xl border border-gray-200 p-5 transition hover:border-blue-300 hover:shadow-sm"
-          >
-            <h3 className="text-lg font-semibold">
-              MP3をMIDIに変換する方法
-            </h3>
-            <p className="mt-2 text-sm text-gray-600">
-              音声ファイルからMIDIへ変換する基本を解説します。
-            </p>
-          </a>
-
-          <a
-            href="/articles/what-is-midi"
-            className="rounded-2xl border border-gray-200 p-5 transition hover:border-blue-300 hover:shadow-sm"
-          >
-            <h3 className="text-lg font-semibold">
-              MIDIとは？MP3との違いを解説
-            </h3>
-            <p className="mt-2 text-sm text-gray-600">
-              MIDIの仕組みや特徴を初心者向けに解説します。
-            </p>
-          </a>
-
-          <a
             href="/articles/auto-transcription-tools"
             className="rounded-2xl border border-gray-200 p-5 transition hover:border-blue-300 hover:shadow-sm"
           >
@@ -80,6 +56,16 @@ export default function Home() {
             </h3>
             <p className="mt-2 text-sm text-gray-600">
               ピアノ音源をMIDIに変換する方法とコツを解説します。
+            </p>
+          </a>
+          
+          <a
+            href="/articles/ear-copy-efficiency"
+            className="rounded-2xl border border-gray-200 p-5 transition hover:border-blue-300 hover:shadow-sm"
+          >
+            <h3 className="text-lg font-semibold">耳コピを効率化する方法</h3>
+            <p className="mt-2 text-sm text-gray-600">
+              自動採譜とMIDIを使って耳コピ作業を時短する方法を解説します。
             </p>
           </a>
         </div>

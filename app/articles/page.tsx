@@ -34,6 +34,12 @@ const articles = [
     title: "ピアノ音源をMIDI化する方法",
     description: "ピアノ音源をMIDIに変換する方法とコツを解説",
   },
+  {
+    href: "/articles/ear-copy-efficiency",
+    title: "耳コピを効率化する方法｜自動採譜とMIDIを使った時短のコツ",
+    description:
+      "自動採譜ツールやMIDIを活用して、耳コピや譜面作成を効率化する方法を初心者向けに解説します。",
+  },
 ];
 
 export default function ArticlesPage() {
