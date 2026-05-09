@@ -27,10 +27,17 @@ export default function RootLayout({
     <html lang="ja">
       <head>
         <meta name="google-site-verification" content="_vV7P0VCH4Tkn1lATts_iE3-Lt6Geseb_Cx-3HGqvBI" />
+
+        <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1252744718520337"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
+
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-J8GVD9BMXB"
           strategy="afterInteractive"
         />
+        
         <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
