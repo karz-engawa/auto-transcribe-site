@@ -58,7 +58,7 @@ export default function Home() {
               ピアノ音源をMIDIに変換する方法とコツを解説します。
             </p>
           </a>
-          
+
           <a
             href="/articles/ear-copy-efficiency"
             className="rounded-2xl border border-gray-200 p-5 transition hover:border-blue-300 hover:shadow-sm"
@@ -83,6 +83,9 @@ export default function Home() {
       <div className="mt-12 flex flex-wrap justify-center gap-6 pb-12 text-sm text-gray-500">
         <a href="/about" className="hover:underline">
           このサイトについて
+        </a>
+        <a href="/terms" className="hover:underline">
+          利用規約
         </a>
         <a href="/privacy" className="hover:underline">
           プライバシーポリシー
