@@ -59,6 +59,61 @@ export default function PrivacyPage() {
               変更後のプライバシーポリシーは、本ページに掲載した時点で効力を生じるものとします。
             </p>
           </section>
+          <section className="mt-10">
+            <h2 className="text-2xl font-bold">
+              広告配信について
+            </h2>
+
+            <p className="mt-4 leading-8 text-gray-700">
+              当サイトでは、第三者配信の広告サービス
+              （Google AdSense など）を利用する場合があります。
+            </p>
+
+            <p className="mt-4 leading-8 text-gray-700">
+              広告配信事業者は、ユーザーの興味に応じた広告を表示するために、
+              Cookie を使用することがあります。
+            </p>
+
+            <p className="mt-4 leading-8 text-gray-700">
+              ユーザーは Google の広告設定ページから、
+              パーソナライズ広告を無効にできます。
+            </p>
+          </section>
+
+          <section className="mt-10">
+            <h2 className="text-2xl font-bold">
+              アクセス解析ツールについて
+            </h2>
+
+            <p className="mt-4 leading-8 text-gray-700">
+              当サイトでは、Google Analytics を利用しています。
+            </p>
+
+            <p className="mt-4 leading-8 text-gray-700">
+              Google Analytics は、トラフィックデータ収集のために
+              Cookie を使用しています。
+            </p>
+
+            <p className="mt-4 leading-8 text-gray-700">
+              このデータは匿名で収集されており、
+              個人を特定するものではありません。
+            </p>
+          </section>
+
+          <section className="mt-10">
+            <h2 className="text-2xl font-bold">
+              Cookieについて
+            </h2>
+
+            <p className="mt-4 leading-8 text-gray-700">
+              当サイトでは、利便性向上やアクセス解析、
+              広告配信のために Cookie を利用する場合があります。
+            </p>
+
+            <p className="mt-4 leading-8 text-gray-700">
+              ブラウザ設定により Cookie を無効化することも可能です。
+            </p>
+          </section>
         </div>
       </div>
     </main>
