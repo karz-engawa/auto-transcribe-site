@@ -1,34 +1,75 @@
-export const metadata = {
-  title: "このサイトについて | 自動採譜アプリ",
-  description: "自動採譜アプリについての紹介ページです。",
-};
-
 export default function AboutPage() {
   return (
-    <main className="min-h-screen bg-white px-6 py-16 text-gray-900">
-      <div className="mx-auto max-w-4xl">
-        <h1 className="mb-8 text-3xl font-bold">このサイトについて</h1>
+    <main className="max-w-3xl mx-auto px-6 py-16">
+      <div className="mb-8 text-sm text-gray-500">
+        ホーム / このサイトについて
+      </div>
 
-        <div className="space-y-6 leading-8 text-gray-700">
+      <h1 className="text-5xl font-bold mb-10">
+        このサイトについて
+      </h1>
+
+      <div className="space-y-8 text-gray-700 leading-8">
+
+        <section>
+          <h2 className="text-2xl font-bold mb-4">
+            自動採譜アプリについて
+          </h2>
+
           <p>
-            自動採譜アプリは、音声ファイルをアップロードすることで MIDI を生成することを目的としたWebサービスです。
+            自動採譜アプリは、音声ファイルからMIDIデータを生成する
+            AIベースの自動採譜ツールです。
           </p>
 
-          <p>
-            現在は試験公開版として運用しており、今後は精度向上、使いやすさ改善、記事コンテンツの充実を進めていく予定です。
+          <p className="mt-4">
+            音楽制作、耳コピ、作曲、楽譜制作をより効率化することを目的として、
+            MIDI変換ツールや関連情報を提供しています。
           </p>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-bold mb-4">
+            このサイトの目的
+          </h2>
 
           <p>
-            このサイトでは、以下のような情報も順次公開していきます。
+            MIDI、AI音楽、耳コピ、自動採譜に関する情報を、
+            初心者にもわかりやすく解説することを目的としています。
           </p>
 
-          <ul className="list-disc space-y-2 pl-6">
-            <li>自動採譜ツールの使い方</li>
-            <li>MIDIや楽譜作成に関する解説</li>
-            <li>AIによる音楽制作・採譜の活用方法</li>
-            <li>開発ログや改善履歴</li>
-          </ul>
-        </div>
+          <p className="mt-4">
+            音楽制作のハードルを下げ、
+            より多くの人が音楽制作を楽しめる環境づくりを目指しています。
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-bold mb-4">
+            ご利用について
+          </h2>
+
+          <p>
+            当サイトで提供している自動採譜機能は、
+            AIによる解析結果を元に生成されています。
+          </p>
+
+          <p className="mt-4">
+            完全な精度を保証するものではないため、
+            MuseScoreやDAWソフトなどで修正しながらご利用ください。
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-bold mb-4">
+            お問い合わせ
+          </h2>
+
+          <p>
+            ご意見・ご要望などがございましたら、
+            お問い合わせページよりご連絡ください。
+          </p>
+        </section>
+
       </div>
     </main>
   );
