@@ -36,14 +36,14 @@ export default function Home() {
 
         <div className="mt-8 grid gap-6 md:grid-cols-3">
           <a
-            href="/articles/auto-transcription-tools"
+            href="/articles/musescore-midi-edit"
             className="rounded-2xl border border-gray-200 p-5 transition hover:border-blue-300 hover:shadow-sm"
           >
             <h3 className="text-lg font-semibold">
-              自動採譜ツール比較
+              MuseScoreの使い方
             </h3>
             <p className="mt-2 text-sm text-gray-600">
-              MP3からMIDI変換できるツールの考え方を解説します。
+              MIDI読み込みから楽譜編集まで初心者向けに解説します。
             </p>
           </a>
 

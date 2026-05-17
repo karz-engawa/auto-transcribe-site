@@ -40,6 +40,12 @@ const articles = [
     description:
       "自動採譜ツールやMIDIを活用して、耳コピや譜面作成を効率化する方法を初心者向けに解説します。",
   },
+  {
+    href: "/articles/musescore-midi-edit",
+    title: "MuseScoreの使い方｜MIDI読み込みから楽譜編集まで初心者向け解説",
+    description:
+      "MuseScoreでMIDIを読み込み、音符やリズムを修正して楽譜として整える方法を初心者向けに解説します。",
+  },
 ];
 
 export default function ArticlesPage() {
