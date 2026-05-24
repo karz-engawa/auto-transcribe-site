@@ -52,6 +52,54 @@ const articles = [
     description:
       "無料で使える自動採譜ソフトの選び方や、音声からMIDIへ変換してMuseScoreで修正する流れを初心者向けに解説します。",
   },
+    {
+    href: "/articles/what-is-musicxml",
+    title: "MusicXMLとは？MIDIとの違いや楽譜制作での使い方を解説",
+    description:
+      "MusicXMLの基本、MIDIとの違い、MuseScoreでの使い方を初心者向けに解説します。",
+  },
+  {
+    href: "/articles/what-is-daw",
+    title: "DAWとは？初心者向けに音楽制作ソフトの基本を解説",
+    description:
+      "DAWの意味、できること、MIDIや自動採譜との関係を初心者向けに解説します。",
+  },
+  {
+    href: "/articles/musescore-vs-finale",
+    title: "MuseScoreとFinaleの違い｜初心者が選ぶならどちら？",
+    description:
+      "MuseScoreとFinaleの違い、初心者向けの選び方、自動採譜後の編集用途を解説します。",
+  },
+  {
+    href: "/articles/ai-sheet-music",
+    title: "AIで楽譜を作る方法｜自動採譜とMIDIを使った作成手順",
+    description:
+      "AIで楽譜を作る方法、自動採譜、MIDI、MuseScoreを組み合わせる流れを解説します。",
+  },
+  {
+    href: "/articles/how-auto-transcription-works",
+    title: "自動採譜の仕組みとは？音声からMIDIが作られる流れを解説",
+    description:
+      "自動採譜の仕組み、音声解析、ピッチ推定、MIDI生成の流れを初心者向けに解説します。",
+  },
+  {
+    href: "/articles/wav-to-midi",
+    title: "WAVをMIDIに変換する方法｜音声ファイルを自動採譜する手順",
+    description:
+      "WAVファイルをMIDIに変換する方法、自動採譜ツールの使い方、MuseScoreでの修正手順を解説します。",
+  },
+  {
+    href: "/articles/midi-to-sheet-music",
+    title: "MIDIを楽譜にする方法｜MuseScoreで読み込んで編集する手順",
+    description:
+      "MIDIを楽譜にする方法、MuseScoreでの読み込み、修正、PDF出力まで解説します。",
+  },
+  {
+    href: "/articles/free-daw-for-beginners",
+    title: "無料DAWおすすめ｜初心者がMIDI編集を始めるための選び方",
+    description:
+      "無料DAWの選び方、MIDI編集、自動採譜後の活用方法を初心者向けに解説します。",
+  },
 ];
 
 export default function ArticlesPage() {
