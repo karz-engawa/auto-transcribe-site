@@ -46,6 +46,12 @@ const articles = [
     description:
       "MuseScoreでMIDIを読み込み、音符やリズムを修正して楽譜として整える方法を初心者向けに解説します。",
   },
+  {
+    href: "/articles/free-auto-transcription-tools",
+    title: "無料で使える自動採譜ソフト比較｜音声からMIDI・楽譜化する方法",
+    description:
+      "無料で使える自動採譜ソフトの選び方や、音声からMIDIへ変換してMuseScoreで修正する流れを初心者向けに解説します。",
+  },
 ];
 
 export default function ArticlesPage() {

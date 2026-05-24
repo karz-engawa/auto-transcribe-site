@@ -36,6 +36,17 @@ export default function Home() {
 
         <div className="mt-8 grid gap-6 md:grid-cols-3">
           <a
+            href="/articles/free-auto-transcription-tools"
+            className="rounded-2xl border border-gray-200 p-5 transition hover:border-blue-300 hover:shadow-sm"
+          >
+            <h3 className="text-lg font-semibold">
+              無料で使える自動採譜ソフト比較
+            </h3>
+            <p className="mt-2 text-sm text-gray-600">
+              音声からMIDI・楽譜化する方法を初心者向けに解説します。
+            </p>
+          </a>
+          <a
             href="/articles/musescore-midi-edit"
             className="rounded-2xl border border-gray-200 p-5 transition hover:border-blue-300 hover:shadow-sm"
           >
@@ -56,16 +67,6 @@ export default function Home() {
             </h3>
             <p className="mt-2 text-sm text-gray-600">
               ピアノ音源をMIDIに変換する方法とコツを解説します。
-            </p>
-          </a>
-
-          <a
-            href="/articles/ear-copy-efficiency"
-            className="rounded-2xl border border-gray-200 p-5 transition hover:border-blue-300 hover:shadow-sm"
-          >
-            <h3 className="text-lg font-semibold">耳コピを効率化する方法</h3>
-            <p className="mt-2 text-sm text-gray-600">
-              自動採譜とMIDIを使って耳コピ作業を時短する方法を解説します。
             </p>
           </a>
         </div>
