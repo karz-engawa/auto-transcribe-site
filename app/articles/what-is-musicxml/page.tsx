@@ -73,25 +73,137 @@ export default function ArticlePage() {
         <section className="mb-10 rounded-2xl border border-gray-200 bg-gray-50 p-6">
           <h2 className="mb-4 text-xl font-semibold">この記事でわかること</h2>
           <ul className="space-y-2 text-gray-700">
-            <li>・MusicXMLとは？</li>
+            <li>・MusicXMLとは何か</li>
             <li>・MIDIとMusicXMLの違い</li>
             <li>・MusicXMLが向いている用途</li>
-            <li>・まとめ</li>
+            <li>・自動採譜とMusicXMLを組み合わせる流れ</li>
+            <li>・MuseScoreでMusicXMLを使う方法</li>
+            <li>・MusicXMLを使うときの注意点</li>
           </ul>
         </section>
 
         <section className="prose prose-gray max-w-none">
           <h2>MusicXMLとは？</h2>
-          <p>MusicXMLは、楽譜の情報をソフト間でやり取りするためのファイル形式です。音符、休符、小節、拍子、調号、歌詞、強弱記号など、楽譜として表示するための情報を扱いやすいのが特徴です。</p>
+          <p>
+            MusicXMLは、楽譜の情報をソフト間でやり取りするためのファイル形式です。
+            音符、休符、小節、拍子、調号、歌詞、強弱記号、スラー、繰り返し記号など、
+            楽譜として表示するための情報を扱いやすいのが特徴です。
+            拡張子は <code>.musicxml</code> や <code>.xml</code>、圧縮版では <code>.mxl</code> が使われます。
+          </p>
+          <p>
+            もともとは異なる楽譜制作ソフト同士でデータをやり取りすることを目的に作られました。
+            MuseScore、Finale、Sibeliusなど主要な楽譜ソフトのほとんどがMusicXMLに対応しているため、
+            「ソフトを乗り換えるときの中間ファイル」としても重宝されています。
+          </p>
 
           <h2>MIDIとMusicXMLの違い</h2>
-          <p>MIDIは演奏情報を中心に扱う形式です。一方、MusicXMLは楽譜としての見た目や構造を扱うことに向いています。自動採譜では、まずMIDIを作り、MuseScoreで整えてMusicXMLやPDFに書き出す流れが実用的です。</p>
+          <p>
+            MIDIは「演奏情報」を中心に扱う形式です。
+            「どの音を、いつ、どれくらいの長さで、どのくらいの強さで鳴らすか」を記録します。
+            一方、MusicXMLは「楽譜としての見た目や構造」を扱うことに向いていて、
+            音符の見た目（4分音符・8分音符など）、小節の区切り、調号・拍子、歌詞、リハーサルマーク、
+            タイやスラーといった楽譜記号まで明確に保存できます。
+          </p>
+          <p>
+            自動採譜では、まず音声からMIDIを作り、MuseScoreで整えてからMusicXMLやPDFに書き出す流れが実用的です。
+            MIDIはあくまで「演奏のメモ」に近く、楽譜として読みやすい形にするにはMusicXMLでの整形が必要だからです。
+          </p>
+
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse overflow-hidden rounded-xl border border-gray-200 text-sm">
+              <thead className="bg-gray-100">
+                <tr>
+                  <th className="border border-gray-200 px-4 py-3 text-left">項目</th>
+                  <th className="border border-gray-200 px-4 py-3 text-left">MIDI</th>
+                  <th className="border border-gray-200 px-4 py-3 text-left">MusicXML</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="border border-gray-200 px-4 py-3">データの中身</td>
+                  <td className="border border-gray-200 px-4 py-3">演奏情報</td>
+                  <td className="border border-gray-200 px-4 py-3">楽譜情報</td>
+                </tr>
+                <tr>
+                  <td className="border border-gray-200 px-4 py-3">主な用途</td>
+                  <td className="border border-gray-200 px-4 py-3">DAW、音源再生</td>
+                  <td className="border border-gray-200 px-4 py-3">楽譜作成、印刷、ソフト間連携</td>
+                </tr>
+                <tr>
+                  <td className="border border-gray-200 px-4 py-3">楽譜記号の表現</td>
+                  <td className="border border-gray-200 px-4 py-3">弱い</td>
+                  <td className="border border-gray-200 px-4 py-3">強い</td>
+                </tr>
+                <tr>
+                  <td className="border border-gray-200 px-4 py-3">音色設定</td>
+                  <td className="border border-gray-200 px-4 py-3">あり</td>
+                  <td className="border border-gray-200 px-4 py-3">基本的にソフト側で設定</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
           <h2>MusicXMLが向いている用途</h2>
-          <p>楽譜ソフト間でデータを受け渡したい場合、MusicXMLが便利です。PDFより後から修正しやすく、他の楽譜ソフトでも再編集しやすい形式です。</p>
+          <p>
+            楽譜ソフト間でデータを受け渡したい場合、MusicXMLが便利です。
+            PDFより後から修正しやすく、他の楽譜ソフトでも再編集しやすい形式です。
+            たとえば、MuseScoreで作った楽譜をFinaleで仕上げる、
+            あるいは別の編曲者と楽譜データを共有するといった場面で役立ちます。
+          </p>
+          <ul>
+            <li>他の楽譜ソフトに楽譜を持ち込みたい</li>
+            <li>編曲・写譜を共同作業したい</li>
+            <li>後から再編集できる形で楽譜を保管したい</li>
+            <li>自動採譜したMIDIを楽譜らしく整えて配布したい</li>
+            <li>歌詞付きの譜面を扱いたい</li>
+          </ul>
+
+          <h2>自動採譜とMusicXMLを組み合わせる流れ</h2>
+          <p>
+            自動採譜ツールから直接MusicXMLが出力されることは少なく、まずMIDIが生成されるのが一般的です。
+            そこからMusicXMLを得るには、次のような流れを取ります。
+          </p>
+          <ol>
+            <li>音声ファイルを自動採譜ツールに読み込ませる</li>
+            <li>MIDIを生成してダウンロードする</li>
+            <li>MuseScoreなどでMIDIを開く</li>
+            <li>音符・リズム・拍子を整える</li>
+            <li>MusicXML形式で書き出す</li>
+          </ol>
+          <p>
+            こうすることで、自動採譜の結果を「演奏データ」から「楽譜データ」へと変換でき、
+            他のソフトや人とも共有しやすくなります。
+          </p>
+
+          <h2>MuseScoreでMusicXMLを使う方法</h2>
+          <p>
+            MuseScoreでは、「ファイル」メニューから「開く」を選ぶだけで、
+            MusicXMLファイルをそのまま楽譜として読み込めます。
+            書き出すときも「エクスポート」からMusicXMLを選ぶだけで保存できます。
+          </p>
+          <p>
+            無料で使えるソフトの中でも、MuseScoreはMusicXMLの読み書きに強く、
+            他の楽譜ソフトとデータをやり取りする際の中継役として非常に便利です。
+          </p>
+
+          <h2>MusicXMLを使うときの注意点</h2>
+          <ul>
+            <li>ソフトによって対応している楽譜記号の範囲が異なる</li>
+            <li>細かなレイアウトはソフト側で再調整が必要になることがある</li>
+            <li>圧縮版（.mxl）は対応していないソフトもあるため、最初は通常版で保存すると安心</li>
+            <li>歌詞や繰り返し記号などは読み込み後に確認した方がよい</li>
+          </ul>
 
           <h2>まとめ</h2>
-          <p>MusicXMLは、楽譜データを扱うために便利な形式です。MIDIは演奏情報、MusicXMLは楽譜情報に強いと考えると理解しやすいです。</p>
+          <p>
+            MusicXMLは、楽譜データを扱うために便利な形式です。
+            MIDIは演奏情報、MusicXMLは楽譜情報に強いと考えると整理しやすいでしょう。
+          </p>
+          <p>
+            自動採譜で作ったMIDIをMuseScoreで整え、MusicXMLとして書き出しておけば、
+            将来別の楽譜ソフトを使うときにもデータを引き継ぎやすくなります。
+            MIDIとMusicXMLは対立する形式ではなく、用途に応じて使い分けるのが現実的です。
+          </p>
         </section>
 
         <section className="mt-12 rounded-2xl border border-blue-100 bg-blue-50 p-6">

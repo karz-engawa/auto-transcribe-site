@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 
 export default function MuseScoreMidiEditPage() {
   const jsonLd = {
-    "@context": "https://schema.org",
+    "@context": "https://schema.org", 
     "@type": "Article",
     headline: "MuseScoreの使い方｜MIDI読み込みから楽譜編集まで初心者向け解説",
     description:

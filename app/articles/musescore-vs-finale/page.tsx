@@ -74,25 +74,128 @@ export default function ArticlePage() {
         <section className="mb-10 rounded-2xl border border-gray-200 bg-gray-50 p-6">
           <h2 className="mb-4 text-xl font-semibold">この記事でわかること</h2>
           <ul className="space-y-2 text-gray-700">
-            <li>・MuseScoreとは？</li>
-            <li>・Finaleとは？</li>
-            <li>・初心者にはどちらが向いている？</li>
-            <li>・まとめ</li>
+            <li>・MuseScoreの特徴</li>
+            <li>・Finaleの特徴</li>
+            <li>・MuseScoreとFinaleの違い</li>
+            <li>・初心者にはどちらが向いているか</li>
+            <li>・自動採譜後の編集にどちらが向くか</li>
+            <li>・選び方のポイント</li>
           </ul>
         </section>
 
         <section className="prose prose-gray max-w-none">
           <h2>MuseScoreとは？</h2>
-          <p>MuseScoreは無料で使える楽譜作成ソフトです。MIDIの読み込み、楽譜編集、PDF出力などに対応しており、初心者でも始めやすいのが特徴です。</p>
+          <p>
+            MuseScoreは無料で使える楽譜作成ソフトです。
+            MIDIの読み込み、楽譜編集、PDF出力、MusicXMLの読み書きなどに対応しており、初心者でも始めやすいのが特徴です。
+            無料ながら本格的な楽譜作成が可能で、世界中の音楽家・教育現場・趣味ユーザーに広く使われています。
+          </p>
+          <p>
+            日本語の解説情報も豊富で、操作画面もわかりやすく整理されています。
+            自動採譜ツールから出力したMIDIを読み込んで修正する用途にも適しているため、
+            これから楽譜編集を始める人の最初の一歩として選ばれることが多いソフトです。
+          </p>
 
           <h2>Finaleとは？</h2>
-          <p>Finaleは長年使われてきた本格的な楽譜制作ソフトです。出版譜のような細かなレイアウト調整や専門的な楽譜制作に使われてきました。</p>
+          <p>
+            Finaleは長年使われてきた本格的な楽譜制作ソフトです。
+            出版譜のような細かなレイアウト調整や、専門的な楽譜制作に使われてきました。
+            プロの写譜家や出版社、音楽教育の現場で長年標準的に使われてきた実績があります。
+          </p>
+          <p>
+            ただし、近年は新規販売が終了したり、開発状況が変化しています。
+            これから新しく楽譜編集を始める人にとっては、最新の情報を確認したうえで判断する必要があります。
+          </p>
+
+          <h2>MuseScoreとFinaleの違い</h2>
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse overflow-hidden rounded-xl border border-gray-200 text-sm">
+              <thead className="bg-gray-100">
+                <tr>
+                  <th className="border border-gray-200 px-4 py-3 text-left">項目</th>
+                  <th className="border border-gray-200 px-4 py-3 text-left">MuseScore</th>
+                  <th className="border border-gray-200 px-4 py-3 text-left">Finale</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="border border-gray-200 px-4 py-3">価格</td>
+                  <td className="border border-gray-200 px-4 py-3">無料</td>
+                  <td className="border border-gray-200 px-4 py-3">有料（販売状況は要確認）</td>
+                </tr>
+                <tr>
+                  <td className="border border-gray-200 px-4 py-3">操作の難易度</td>
+                  <td className="border border-gray-200 px-4 py-3">初心者向け</td>
+                  <td className="border border-gray-200 px-4 py-3">中〜上級者向け</td>
+                </tr>
+                <tr>
+                  <td className="border border-gray-200 px-4 py-3">細かなレイアウト</td>
+                  <td className="border border-gray-200 px-4 py-3">十分</td>
+                  <td className="border border-gray-200 px-4 py-3">非常に細かく調整可能</td>
+                </tr>
+                <tr>
+                  <td className="border border-gray-200 px-4 py-3">MIDI読み込み</td>
+                  <td className="border border-gray-200 px-4 py-3">対応</td>
+                  <td className="border border-gray-200 px-4 py-3">対応</td>
+                </tr>
+                <tr>
+                  <td className="border border-gray-200 px-4 py-3">MusicXML対応</td>
+                  <td className="border border-gray-200 px-4 py-3">強い</td>
+                  <td className="border border-gray-200 px-4 py-3">強い</td>
+                </tr>
+                <tr>
+                  <td className="border border-gray-200 px-4 py-3">情報量（日本語）</td>
+                  <td className="border border-gray-200 px-4 py-3">多い</td>
+                  <td className="border border-gray-200 px-4 py-3">中程度</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
           <h2>初心者にはどちらが向いている？</h2>
-          <p>初心者が自動採譜後のMIDIを修正したい場合は、まずMuseScoreから始めるのがおすすめです。無料で使いやすく、基本的な楽譜編集に十分対応できます。</p>
+          <p>
+            初心者が自動採譜後のMIDIを修正したい場合は、まずMuseScoreから始めるのがおすすめです。
+            無料で使いやすく、基本的な楽譜編集に十分対応できます。
+            操作画面もシンプルで、覚えるべきショートカットや概念も最小限です。
+          </p>
+          <p>
+            Finaleは細かな表現力や出版品質のレイアウトに優れますが、その分操作も複雑で、
+            初心者がいきなり扱うとつまずきやすい部分があります。
+          </p>
+
+          <h2>自動採譜後の編集にどちらが向くか</h2>
+          <p>
+            自動採譜ツールで出力したMIDIには、不要音の混入や音価の細かなズレなどがよく見られます。
+            こうした「下書きMIDIを楽譜らしく整える」という作業には、MuseScoreの軽快さと無料で使える手軽さが合っています。
+          </p>
+          <ul>
+            <li>MIDI読み込み後にすぐ修正を始めやすい</li>
+            <li>音符選択や削除がシンプル</li>
+            <li>クオンタイズも基本操作で完結する</li>
+            <li>PDF・MusicXML・MIDIの書き出しが揃っている</li>
+          </ul>
+          <p>
+            プロレベルの出版譜まで仕上げる必要がある場合のみ、より高機能なソフトを検討する流れで十分です。
+          </p>
+
+          <h2>選び方のポイント</h2>
+          <ul>
+            <li>まずは無料で試したい → MuseScore</li>
+            <li>出版品質のレイアウトが必要 → 上位ソフトを検討</li>
+            <li>学習コストを抑えたい → MuseScore</li>
+            <li>既に使っているソフトがあるなら互換性で選ぶ</li>
+          </ul>
 
           <h2>まとめ</h2>
-          <p>初心者が楽譜編集を始めるなら、まずMuseScoreがおすすめです。必要に応じて他のソフトを検討するとよいでしょう。</p>
+          <p>
+            初心者が楽譜編集を始めるなら、まずMuseScoreがおすすめです。
+            無料で始められ、自動採譜の結果を整えるのに必要な機能が揃っています。
+          </p>
+          <p>
+            将来、より高度な楽譜表現や出版用のレイアウトが必要になったときに、
+            必要に応じて他のソフトを検討する流れが現実的です。
+            まずはMuseScoreで楽譜編集の基礎を身につけてから次のステップへ進みましょう。
+          </p>
         </section>
 
         <section className="mt-12 rounded-2xl border border-blue-100 bg-blue-50 p-6">
