@@ -30,6 +30,60 @@ const benefits = [
   },
 ];
 
+const whyUseful = [
+  {
+    label: "耳コピしたい方",
+    body: "一音一音を手作業で拾う前にAIで下書きを生成できます。MuseScoreで確認しながら修正するだけで、採譜にかかる時間を大幅に短縮できます。",
+    href: "/articles/ear-copying-basics",
+    linkText: "耳コピの基本を読む",
+  },
+  {
+    label: "楽譜を作りたい方",
+    body: "録音した演奏やハミングをMIDI化し、MuseScoreで楽譜として整えることで、印刷・共有できる楽譜を手軽に作れます。",
+    href: "/articles/musescore-midi-edit",
+    linkText: "MuseScoreの使い方を読む",
+  },
+  {
+    label: "DAW打ち込みを始めたい方",
+    body: "鼻歌やアイデアを録音してMIDI化することで、DAWでの打ち込みの出発点を素早く作れます。ゼロから入力するより格段に効率が上がります。",
+    href: "/articles/music-production-beginner-guide",
+    linkText: "音楽制作の始め方を読む",
+  },
+];
+
+const beginnerGuides = [
+  {
+    href: "/articles/what-is-midi",
+    title: "MIDIとは？",
+    description: "MIDIの仕組み、MP3との違い、できること・できないことを初心者向けに解説します。",
+  },
+  {
+    href: "/articles/ear-copying-basics",
+    title: "耳コピとは？",
+    description: "耳コピの基本的なやり方・コツ・練習法を初心者向けにわかりやすく解説します。",
+  },
+  {
+    href: "/articles/music-production-beginner-guide",
+    title: "音楽制作を独学で始める方法",
+    description: "DAWの選び方からMIDIの基本、最初のステップまでを順番に解説します。",
+  },
+  {
+    href: "/articles/what-is-piano-roll",
+    title: "ピアノロールとは？",
+    description: "DAWのピアノロールの見方・使い方を初心者向けにわかりやすく解説します。",
+  },
+  {
+    href: "/articles/what-is-midi-keyboard",
+    title: "MIDIキーボードとは？",
+    description: "MIDIキーボードの仕組みと選び方を初心者向けに解説します。",
+  },
+  {
+    href: "/articles/relative-pitch-training",
+    title: "相対音感の鍛え方",
+    description: "耳トレーニングの基本と練習法を初心者向けにわかりやすく紹介します。",
+  },
+];
+
 const useCases = [
   {
     title: "好きな曲を耳コピしたい",
@@ -61,6 +115,39 @@ const useCases = [
   },
 ];
 
+const articles = [
+  {
+    href: "/articles/free-auto-transcription-tools",
+    title: "無料で使える自動採譜ソフト比較",
+    description: "音声からMIDI・楽譜化する方法を初心者向けに解説します。",
+  },
+  {
+    href: "/articles/musescore-midi-edit",
+    title: "MuseScoreの使い方",
+    description: "MIDI読み込みから楽譜編集まで初心者向けに解説します。",
+  },
+  {
+    href: "/articles/what-is-midi",
+    title: "MIDIとは？MP3との違いをわかりやすく解説",
+    description: "MIDIの基本をMP3やWAVとの比較を交えて初心者向けに整理します。",
+  },
+  {
+    href: "/articles/ear-copy-efficiency",
+    title: "耳コピを効率化する方法",
+    description: "自動採譜とMIDIを使った耳コピの時短テクニックを解説します。",
+  },
+  {
+    href: "/articles/mp3-to-midi",
+    title: "MP3をMIDIに変換する方法",
+    description: "MP3などの音声ファイルからMIDIを生成する手順と注意点を解説します。",
+  },
+  {
+    href: "/articles/how-auto-transcription-works",
+    title: "自動採譜の仕組みとは？",
+    description: "音声解析からMIDI生成までの流れを初心者向けにわかりやすく解説します。",
+  },
+];
+
 const faq = [
   {
     q: "自動採譜とは何ですか？",
@@ -79,30 +166,20 @@ const faq = [
     a: "MuseScoreに読み込んで楽譜として編集したり、DAWに読み込んで打ち込みの確認・修正をするのが一般的な使い方です。そのまま完成品として使うより、少し手を加えることで実用的なデータになります。",
   },
   {
+    q: "耳コピが苦手でも使えますか？",
+    a: "はい、むしろ耳コピが苦手な方に最も役立つツールです。AIが生成したMIDIをたたき台として、MuseScoreやDAWで音を確認しながら修正していくことで、音感に自信がなくても採譜作業を進められます。",
+  },
+  {
+    q: "DAWを持っていなくても使えますか？",
+    a: "ツール自体はDAWなしで利用できます。生成されたMIDIは無料の楽譜ソフトMuseScoreで開くことができるため、DAWがなくても音の確認・編集・楽譜化が可能です。",
+  },
+  {
     q: "著作権のある楽曲に使ってもいいですか？",
     a: "著作権のある楽曲の採譜は個人の学習・練習目的の範囲でご利用ください。採譜結果の公開・配布・商用利用は著作権者の権利を侵害する可能性があります。",
   },
   {
     q: "スマートフォンでも使えますか？",
     a: "ブラウザ上で動作するため、スマートフォンやタブレットからでも利用できます。ただし処理時間や表示のしやすさの点で、PCからの利用を推奨しています。",
-  },
-];
-
-const articles = [
-  {
-    href: "/articles/free-auto-transcription-tools",
-    title: "無料で使える自動採譜ソフト比較",
-    description: "音声からMIDI・楽譜化する方法を初心者向けに解説します。",
-  },
-  {
-    href: "/articles/musescore-midi-edit",
-    title: "MuseScoreの使い方",
-    description: "MIDI読み込みから楽譜編集まで初心者向けに解説します。",
-  },
-  {
-    href: "/articles/piano-to-midi",
-    title: "ピアノ音源をMIDI化する方法",
-    description: "ピアノ音源をMIDIに変換する方法とコツを解説します。",
   },
 ];
 
@@ -172,18 +249,62 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Benefits */}
+      {/* Why useful */}
       <section className="mx-auto max-w-5xl px-6 py-16 md:px-8">
-        <h2 className="mb-2 text-center text-3xl font-bold">このツールでできること</h2>
+        <h2 className="mb-2 text-center text-3xl font-bold">こんな方に役立ちます</h2>
         <p className="mb-10 text-center text-gray-600">
-          音楽制作・耳コピ・楽譜作成の作業を効率化できます。
+          自動採譜ツールは、音楽制作のさまざまな場面で活躍します。
         </p>
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-          {benefits.map((b) => (
-            <div key={b.title} className="rounded-2xl border border-gray-200 p-6">
-              <h3 className="mb-3 text-lg font-semibold">{b.title}</h3>
-              <p className="text-sm leading-6 text-gray-600">{b.description}</p>
+        <div className="grid gap-6 md:grid-cols-3">
+          {whyUseful.map((w) => (
+            <div key={w.label} className="rounded-2xl border border-gray-200 p-6">
+              <p className="mb-2 inline-block rounded-full bg-blue-50 px-3 py-1 text-sm font-medium text-blue-700">
+                {w.label}
+              </p>
+              <p className="mb-4 text-sm leading-7 text-gray-600">{w.body}</p>
+              <Link href={w.href} className="text-sm font-medium text-blue-600 hover:underline">
+                {w.linkText} →
+              </Link>
             </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Benefits */}
+      <section className="bg-gray-50 py-16">
+        <div className="mx-auto max-w-5xl px-6 md:px-8">
+          <h2 className="mb-2 text-center text-3xl font-bold">自動採譜の4つのメリット</h2>
+          <p className="mb-10 text-center text-gray-600">
+            音楽制作・耳コピ・楽譜作成の作業を効率化できます。
+          </p>
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+            {benefits.map((b) => (
+              <div key={b.title} className="rounded-2xl border border-gray-200 bg-white p-6">
+                <h3 className="mb-3 text-lg font-semibold">{b.title}</h3>
+                <p className="text-sm leading-6 text-gray-600">{b.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Beginner guide */}
+      <section className="mx-auto max-w-5xl px-6 py-16 md:px-8">
+        <h2 className="mb-2 text-center text-3xl font-bold">初心者向け入門ガイド</h2>
+        <p className="mb-10 text-center text-gray-600">
+          MIDIや耳コピ、音楽制作の基礎知識をわかりやすくまとめています。
+          はじめての方はここから読み始めてください。
+        </p>
+        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          {beginnerGuides.map((g) => (
+            <Link
+              key={g.href}
+              href={g.href}
+              className="rounded-2xl border border-gray-200 p-5 transition hover:border-blue-300 hover:shadow-sm"
+            >
+              <h3 className="mb-2 text-lg font-semibold">{g.title}</h3>
+              <p className="text-sm leading-6 text-gray-600">{g.description}</p>
+            </Link>
           ))}
         </div>
       </section>
@@ -290,6 +411,10 @@ export default function Home() {
               採譜作業の自動化を通じて、音楽制作のハードルを下げることが当サイトの目的です。
             </p>
             <p>
+              掲載している記事はMIDI・DAW・音楽制作の基礎から実践的な活用方法まで幅広くカバーしています。
+              音楽の知識がまったくない方でも、順番に読み進めることで実践的なスキルが身につくよう構成しています。
+            </p>
+            <p>
               掲載しているツールはAIによる解析結果をもとに生成されるため、
               完全な精度を保証するものではありません。
               MuseScoreやDAWで修正しながらご活用ください。
@@ -307,6 +432,12 @@ export default function Home() {
             </Link>
             <Link href="/articles/what-is-midi" className="text-blue-600 underline hover:text-blue-800">
               MIDIとは？
+            </Link>
+            <Link href="/articles/ear-copying-basics" className="text-blue-600 underline hover:text-blue-800">
+              耳コピとは？
+            </Link>
+            <Link href="/articles/music-production-beginner-guide" className="text-blue-600 underline hover:text-blue-800">
+              音楽制作を始める方法
             </Link>
           </div>
         </div>
