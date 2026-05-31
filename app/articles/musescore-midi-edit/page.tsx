@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { RelatedArticles } from "../../_components/RelatedArticles";
 
 export const metadata: Metadata = {
   title: "MuseScoreの使い方｜MIDI読み込みから楽譜編集まで初心者向け解説",
@@ -295,47 +296,7 @@ export default function MuseScoreMidiEditPage() {
           </div>
         </section>
 
-        <section className="mt-12 border-t border-gray-200 pt-8">
-          <h2 className="text-2xl font-bold">関連記事</h2>
-
-          <div className="mt-6 grid gap-4 md:grid-cols-3">
-            <Link
-              href="/articles/mp3-to-midi"
-              className="rounded-2xl border border-gray-200 p-5 transition hover:border-blue-300 hover:shadow-sm"
-            >
-              <h3 className="text-lg font-semibold">
-                MP3をMIDIに変換する方法
-              </h3>
-              <p className="mt-2 text-sm leading-6 text-gray-600">
-                音声ファイルからMIDIへ変換する基本を解説します。
-              </p>
-            </Link>
-
-            <Link
-              href="/articles/piano-to-midi"
-              className="rounded-2xl border border-gray-200 p-5 transition hover:border-blue-300 hover:shadow-sm"
-            >
-              <h3 className="text-lg font-semibold">
-                ピアノ音源をMIDI化する方法
-              </h3>
-              <p className="mt-2 text-sm leading-6 text-gray-600">
-                ピアノ音源からMIDIを作る方法とコツを解説します。
-              </p>
-            </Link>
-
-            <Link
-              href="/articles/ear-copy-efficiency"
-              className="rounded-2xl border border-gray-200 p-5 transition hover:border-blue-300 hover:shadow-sm"
-            >
-              <h3 className="text-lg font-semibold">
-                耳コピを効率化する方法
-              </h3>
-              <p className="mt-2 text-sm leading-6 text-gray-600">
-                自動採譜とMIDIを使って耳コピ作業を時短する方法を解説します。
-              </p>
-            </Link>
-          </div>
-        </section>
+        <RelatedArticles currentHref="/articles/musescore-midi-edit" />
       </article>
     </main>
   );

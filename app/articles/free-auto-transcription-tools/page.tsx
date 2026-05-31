@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { RelatedArticles } from "@/app/_components/RelatedArticles";
 
 export const metadata: Metadata = {
   title: "無料で使える自動採譜ソフト比較｜音声からMIDI・楽譜化する方法",
@@ -280,47 +281,7 @@ export default function FreeAutoTranscriptionToolsPage() {
           </div>
         </section>
 
-        <section className="mt-12 border-t border-gray-200 pt-8">
-          <h2 className="text-2xl font-bold">関連記事</h2>
-
-          <div className="mt-6 grid gap-4 md:grid-cols-3">
-            <Link
-              href="/articles/auto-transcription-tools"
-              className="rounded-2xl border border-gray-200 p-5 transition hover:border-blue-300 hover:shadow-sm"
-            >
-              <h3 className="text-lg font-semibold">
-                自動採譜ツール比較
-              </h3>
-              <p className="mt-2 text-sm leading-6 text-gray-600">
-                MP3からMIDI変換できるツールの考え方を解説します。
-              </p>
-            </Link>
-
-            <Link
-              href="/articles/musescore-midi-edit"
-              className="rounded-2xl border border-gray-200 p-5 transition hover:border-blue-300 hover:shadow-sm"
-            >
-              <h3 className="text-lg font-semibold">
-                MuseScoreの使い方
-              </h3>
-              <p className="mt-2 text-sm leading-6 text-gray-600">
-                MIDI読み込みから楽譜編集まで解説します。
-              </p>
-            </Link>
-
-            <Link
-              href="/articles/ear-copy-efficiency"
-              className="rounded-2xl border border-gray-200 p-5 transition hover:border-blue-300 hover:shadow-sm"
-            >
-              <h3 className="text-lg font-semibold">
-                耳コピを効率化する方法
-              </h3>
-              <p className="mt-2 text-sm leading-6 text-gray-600">
-                自動採譜とMIDIを使って耳コピを時短する方法を解説します。
-              </p>
-            </Link>
-          </div>
-        </section>
+        <RelatedArticles currentHref="/articles/free-auto-transcription-tools" />
       </article>
     </main>
   );

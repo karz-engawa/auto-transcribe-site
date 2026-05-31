@@ -1,3 +1,5 @@
+import { RelatedArticles } from "@/app/_components/RelatedArticles";
+
 export const metadata = {
   title: "MP3をMIDIに変換する方法 | 自動採譜アプリ",
   description:
@@ -205,6 +207,7 @@ export default function Mp3ToMidiPage() {
             </a>
           </section>
         </div>
+        <RelatedArticles currentHref="/articles/mp3-to-midi" />
       </article>
     </main>
   );

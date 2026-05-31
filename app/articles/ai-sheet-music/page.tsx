@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { RelatedArticles } from "@/app/_components/RelatedArticles";
 
 export const metadata: Metadata = {
   title: "AIで楽譜を作る方法｜自動採譜とMIDIを使った作成手順",
@@ -196,23 +197,7 @@ export default function ArticlePage() {
           </div>
         </section>
 
-        <section className="mt-12 border-t border-gray-200 pt-8">
-          <h2 className="text-2xl font-bold">関連記事</h2>
-          <div className="mt-6 grid gap-4 md:grid-cols-3">
-            <Link href="/articles/musescore-midi-edit" className="rounded-2xl border border-gray-200 p-5 transition hover:border-blue-300 hover:shadow-sm">
-              <h3 className="text-lg font-semibold">MuseScoreの使い方</h3>
-              <p className="mt-2 text-sm leading-6 text-gray-600">MIDI読み込みから楽譜編集まで解説します。</p>
-            </Link>
-            <Link href="/articles/what-is-midi" className="rounded-2xl border border-gray-200 p-5 transition hover:border-blue-300 hover:shadow-sm">
-              <h3 className="text-lg font-semibold">MIDIとは？</h3>
-              <p className="mt-2 text-sm leading-6 text-gray-600">MIDIの基本や音声ファイルとの違いを整理します。</p>
-            </Link>
-            <Link href="/articles/free-auto-transcription-tools" className="rounded-2xl border border-gray-200 p-5 transition hover:border-blue-300 hover:shadow-sm">
-              <h3 className="text-lg font-semibold">無料自動採譜ソフト比較</h3>
-              <p className="mt-2 text-sm leading-6 text-gray-600">無料で使える自動採譜ソフトの選び方を解説します。</p>
-            </Link>
-          </div>
-        </section>
+        <RelatedArticles currentHref="/articles/ai-sheet-music" />
       </article>
     </main>
   );

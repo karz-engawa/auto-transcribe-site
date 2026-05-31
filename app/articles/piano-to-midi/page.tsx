@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { RelatedArticles } from "@/app/_components/RelatedArticles";
 
 export const metadata: Metadata = {
   title: "ピアノ音源をMIDI化する方法｜初心者でもできる自動採譜のコツ",
@@ -191,19 +192,7 @@ export default function PianoToMidiPage() {
           </Link>
         </section>
 
-        <section className="mt-12 border-t pt-8">
-          <h2 className="text-xl font-bold">関連記事</h2>
-
-          <div className="mt-4 space-y-3">
-            <Link href="/articles/mp3-to-midi">
-              MP3をMIDIに変換する方法
-            </Link>
-            <br />
-            <Link href="/articles/auto-transcription-tools">
-              自動採譜ツール比較
-            </Link>
-          </div>
-        </section>
+        <RelatedArticles currentHref="/articles/piano-to-midi" />
       </article>
     </main>
   );

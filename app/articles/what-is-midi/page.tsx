@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { RelatedArticles } from "@/app/_components/RelatedArticles";
 
 export const metadata: Metadata = {
   title: "MIDIとは？MP3との違い・できることを初心者向けにわかりやすく解説",
@@ -289,34 +290,7 @@ export default function WhatIsMidiArticlePage() {
           </div>
         </section>
 
-        <section className="mt-12 border-t border-gray-200 pt-8">
-          <h2 className="text-2xl font-bold">関連記事</h2>
-          <div className="mt-6 grid gap-4 md:grid-cols-2">
-            <Link
-              href="/articles/mp3-to-midi"
-              className="rounded-2xl border border-gray-200 p-5 transition hover:border-blue-300 hover:shadow-sm"
-            >
-              <h3 className="text-lg font-semibold">
-                MP3をMIDIに変換する方法をわかりやすく解説
-              </h3>
-              <p className="mt-2 text-sm leading-6 text-gray-600">
-                音声ファイルからMIDIへ変換する基本的な流れと考え方を紹介します。
-              </p>
-            </Link>
-
-            <Link
-              href="/tool"
-              className="rounded-2xl border border-gray-200 p-5 transition hover:border-blue-300 hover:shadow-sm"
-            >
-              <h3 className="text-lg font-semibold">
-                自動採譜ツールを試す
-              </h3>
-              <p className="mt-2 text-sm leading-6 text-gray-600">
-                音声からMIDI化したい方はこちら。実際のツール導線です。
-              </p>
-            </Link>
-          </div>
-        </section>
+        <RelatedArticles currentHref="/articles/what-is-midi" />
       </article>
     </main>
   );
