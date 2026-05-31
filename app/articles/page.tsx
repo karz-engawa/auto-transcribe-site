@@ -100,6 +100,36 @@ const articles = [
     description:
       "無料DAWの選び方、MIDI編集、自動採譜後の活用方法を初心者向けに解説します。",
   },
+  {
+    href: "/articles/ear-copying-basics",
+    title: "耳コピとは？初心者向けにやり方・コツ・練習法を解説",
+    description:
+      "耳コピの基本的なやり方、コツ、よくある失敗と対策、自動採譜ツールを使った効率化方法を初心者向けに紹介します。",
+  },
+  {
+    href: "/articles/what-is-piano-roll",
+    title: "ピアノロールとは？DAW初心者向けに基本的な見方・使い方を解説",
+    description:
+      "ピアノロールの縦軸・横軸の読み方、ノートの編集方法、自動採譜MIDIとの関係をDAW初心者向けに解説します。",
+  },
+  {
+    href: "/articles/what-is-midi-keyboard",
+    title: "MIDIキーボードとは？初心者向けに仕組みと選び方を解説",
+    description:
+      "MIDIキーボードの仕組み、電子ピアノとの違い、DAWへの接続方法、初心者向けの選び方を紹介します。",
+  },
+  {
+    href: "/articles/music-production-beginner-guide",
+    title: "音楽制作を独学で始める方法｜DAWの選び方と最初のステップ",
+    description:
+      "音楽制作に必要なもの、DAWの選び方、MIDIの基本、自動採譜ツールの活用方法まで初心者向けに解説します。",
+  },
+  {
+    href: "/articles/relative-pitch-training",
+    title: "相対音感の鍛え方｜初心者向け耳トレーニングの基本と練習法",
+    description:
+      "相対音感の仕組みと練習法、絶対音感との違い、耳コピ・自動採譜との組み合わせ方を初心者向けに解説します。",
+  },
 ];
 
 export default function ArticlesPage() {
