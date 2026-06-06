@@ -1,18 +1,51 @@
+import type { Metadata } from "next";
 import { RelatedArticles } from "@/app/_components/RelatedArticles";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "MP3をMIDIに変換する方法 | 自動採譜アプリ",
   description:
     "MP3をMIDIに変換する方法を初心者向けに解説します。自動採譜の仕組み、注意点、無料で試せる方法を紹介します。",
+  alternates: {
+    canonical: "/articles/mp3-to-midi",
+  },
 };
 
 export default function Mp3ToMidiPage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: "MP3をMIDIに変換する方法",
+    description:
+      "MP3をMIDIに変換する方法を初心者向けに解説します。自動採譜の仕組み、注意点、無料で試せる方法を紹介します。",
+    author: {
+      "@type": "Organization",
+      name: "自動採譜Webアプリ",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "自動採譜Webアプリ",
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": "/articles/mp3-to-midi",
+    },
+    datePublished: "2026-03-22",
+    dateModified: "2026-03-22",
+  };
+
   return (
     <main className="min-h-screen bg-white px-6 py-16 text-gray-900">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <article className="mx-auto max-w-4xl">
         <header className="mb-10">
           <p className="mb-3 text-sm text-gray-500">記事</p>
           <h1 className="mb-4 text-4xl font-bold">MP3をMIDIに変換する方法</h1>
+          <p className="mt-2 mb-4 text-sm text-gray-500">
+            公開日: 2026-03-22 / 更新日: 2026-03-22
+          </p>
           <p className="text-lg leading-8 text-gray-600">
             MP3などの音声ファイルからMIDIを作成したい人向けに、
             変換の考え方、注意点、実際に試す方法をわかりやすく解説します。
