@@ -443,15 +443,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer links */}
-      <div className="border-t border-gray-100 py-10 text-center text-sm text-gray-500">
-        <div className="flex flex-wrap justify-center gap-6">
-          <Link href="/about" className="hover:underline">このサイトについて</Link>
-          <Link href="/terms" className="hover:underline">利用規約</Link>
-          <Link href="/privacy" className="hover:underline">プライバシーポリシー</Link>
-          <Link href="/contact" className="hover:underline">お問い合わせ</Link>
-        </div>
-      </div>
 
     </main>
   );
