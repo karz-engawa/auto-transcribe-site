@@ -116,6 +116,56 @@ const allArticles = [
     title: "DAWとMuseScoreの違い｜どちらを使えばいい？用途別に解説",
     description: "DAWとMuseScoreの違い、それぞれの得意なこと・苦手なこと、用途別の使い分けを初心者向けに解説します。",
   },
+  {
+    href: "/articles/humming-to-midi",
+    title: "鼻歌・ハミングをMIDIに変換する方法｜メロディを採譜する手順",
+    description: "鼻歌やハミングをMIDIデータに変換する方法を初心者向けに解説。録音のコツから自動採譜、MuseScoreでの修正まで手順を紹介します。",
+  },
+  {
+    href: "/articles/chord-ear-copying",
+    title: "コードの耳コピ方法｜初心者が和音を聴き取るコツを解説",
+    description: "コード（和音）の耳コピ方法を初心者向けに解説。聴き取り手順、よく使われるコード進行の活用方法まで紹介します。",
+  },
+  {
+    href: "/articles/musescore-pdf-export",
+    title: "MuseScoreで楽譜をPDFに出力する方法｜印刷・共有の手順を解説",
+    description: "MuseScoreで作成した楽譜をPDFとして出力・印刷する方法を初心者向けに解説します。",
+  },
+  {
+    href: "/articles/music-production-pc-specs",
+    title: "音楽制作に必要なPCスペック｜DAW・MIDI向けパソコンの選び方",
+    description: "音楽制作・DAW・MIDIに必要なPCスペックを初心者向けに解説。CPU・RAM・ストレージの目安を紹介します。",
+  },
+  {
+    href: "/articles/what-is-bpm",
+    title: "BPMとは？テンポとの違い・音楽制作や耳コピでの使い方を解説",
+    description: "BPMとテンポの違い、DAWでのBPM設定、耳コピでのテンポ計測、MIDIとの関係を初心者向けに解説します。",
+  },
+  {
+    href: "/articles/vocal-to-sheet-music",
+    title: "ボーカルメロディを楽譜にする方法｜歌声を採譜する手順を解説",
+    description: "ボーカルや歌声のメロディを楽譜にする方法を初心者向けに解説。自動採譜ツールを使ったMIDI化の手順まで紹介します。",
+  },
+  {
+    href: "/articles/guitar-to-midi",
+    title: "ギターをMIDIに変換する方法｜録音から自動採譜する手順を解説",
+    description: "ギターの音源やリフをMIDIに変換する方法を初心者向けに解説。録音のコツと自動採譜ツールの使い方を紹介します。",
+  },
+  {
+    href: "/articles/sheet-music-to-midi",
+    title: "楽譜をMIDIに変換する方法｜スキャンと打ち込みで取り込む手順",
+    description: "紙の楽譜やPDF楽譜をMIDIデータに変換する方法を初心者向けに解説します。",
+  },
+  {
+    href: "/articles/what-is-vst",
+    title: "VSTプラグインとは？DAW初心者向けに仕組みと使い方を解説",
+    description: "VSTプラグインとは何かをDAW初心者向けに解説。VSTiとVSTの違い、MIDIとの関係まで紹介します。",
+  },
+  {
+    href: "/articles/absolute-vs-relative-pitch",
+    title: "絶対音感と相対音感の違い｜耳コピや音楽制作に必要なのはどちら？",
+    description: "絶対音感と相対音感の違いを初心者向けに解説。耳コピに本当に必要な音感とトレーニング方法を紹介します。",
+  },
 ];
 
 export function RelatedArticles({ currentHref }: { currentHref: string }) {
