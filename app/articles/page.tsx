@@ -130,6 +130,24 @@ const articles = [
     description:
       "相対音感の仕組みと練習法、絶対音感との違い、耳コピ・自動採譜との組み合わせ方を初心者向けに解説します。",
   },
+  {
+    href: "/articles/garageband-midi-guide",
+    title: "GarageBandでMIDIを使う方法｜録音・編集・書き出しを初心者向け解説",
+    description:
+      "GarageBandでMIDIを録音・編集・書き出す方法を初心者向けに解説します。MIDIキーボードの接続からピアノロール編集まで紹介します。",
+  },
+  {
+    href: "/articles/midi-file-troubleshooting",
+    title: "MIDIファイルが開けない・音が出ない｜よくある問題と解決方法",
+    description:
+      "MIDIファイルが開けない、音が出ない、音がずれるなどのトラブルの原因と解決方法を初心者向けに解説します。",
+  },
+  {
+    href: "/articles/daw-vs-musescore",
+    title: "DAWとMuseScoreの違い｜どちらを使えばいい？用途別に解説",
+    description:
+      "DAWとMuseScoreの違い、それぞれの得意なこと・苦手なこと、用途別の使い分けを初心者向けに解説します。",
+  },
 ];
 
 export default function ArticlesPage() {

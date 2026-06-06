@@ -44,5 +44,17 @@ export default function sitemap() {
       url: "https://www.自動採譜.com/articles/relative-pitch-training",
       lastModified: new Date(),
     },
+    {
+      url: "https://www.自動採譜.com/articles/garageband-midi-guide",
+      lastModified: new Date(),
+    },
+    {
+      url: "https://www.自動採譜.com/articles/midi-file-troubleshooting",
+      lastModified: new Date(),
+    },
+    {
+      url: "https://www.自動採譜.com/articles/daw-vs-musescore",
+      lastModified: new Date(),
+    },
   ]
 }
