@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ArticleImage } from "../../_components/ArticleImage";
 import { RelatedArticles } from "../../_components/RelatedArticles";
 
 export const metadata: Metadata = {
@@ -130,6 +131,11 @@ export default function MuseScoreMidiEditPage() {
           </ol>
 
           <h2>MIDIファイルをMuseScoreで開く方法</h2>
+          <ArticleImage
+            src="/images/articles/musescore-import-midi.svg"
+            alt="MuseScoreでMIDIファイルを読み込んだ画面：楽譜として表示された状態のスクリーンショット"
+            caption="MuseScoreでMIDIを読み込むと楽譜として表示される（スクリーンショット）"
+          />
           <p>
             MuseScoreを起動したら、メニューからMIDIファイルを開きます。
           </p>

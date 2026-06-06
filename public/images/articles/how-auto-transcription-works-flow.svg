@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <rect width="800" height="450" fill="#f9fafb" rx="12"/>
+  <text x="400" y="68" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#374151" font-weight="bold">自動採譜の処理フロー</text>
+
+  <!-- Box 1 -->
+  <rect x="40" y="160" width="148" height="90" rx="8" fill="#dbeafe" stroke="#93c5fd" stroke-width="2"/>
+  <text x="114" y="198" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#1e40af" font-weight="bold">音声ファイル</text>
+  <text x="114" y="220" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#3b82f6">MP3 / WAV</text>
+
+  <!-- Arrow 1 -->
+  <line x1="188" y1="205" x2="212" y2="205" stroke="#6b7280" stroke-width="2"/>
+  <polygon points="208,199 220,205 208,211" fill="#6b7280"/>
+
+  <!-- Box 2 -->
+  <rect x="220" y="160" width="148" height="90" rx="8" fill="#f3f4f6" stroke="#d1d5db" stroke-width="2"/>
+  <text x="294" y="198" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#374151" font-weight="bold">波形解析</text>
+  <text x="294" y="220" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#6b7280">周波数解析</text>
+
+  <!-- Arrow 2 -->
+  <line x1="368" y1="205" x2="392" y2="205" stroke="#6b7280" stroke-width="2"/>
+  <polygon points="388,199 400,205 388,211" fill="#6b7280"/>
+
+  <!-- Box 3 -->
+  <rect x="400" y="160" width="148" height="90" rx="8" fill="#f3f4f6" stroke="#d1d5db" stroke-width="2"/>
+  <text x="474" y="198" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#374151" font-weight="bold">ピッチ推定</text>
+  <text x="474" y="220" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#6b7280">音程・タイミング</text>
+
+  <!-- Arrow 3 -->
+  <line x1="548" y1="205" x2="572" y2="205" stroke="#6b7280" stroke-width="2"/>
+  <polygon points="568,199 580,205 568,211" fill="#6b7280"/>
+
+  <!-- Box 4 -->
+  <rect x="580" y="160" width="148" height="90" rx="8" fill="#d1fae5" stroke="#6ee7b7" stroke-width="2"/>
+  <text x="654" y="198" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#065f46" font-weight="bold">MIDIデータ</text>
+  <text x="654" y="220" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#10b981">出力</text>
+
+  <text x="400" y="330" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#9ca3af">※ 実際のスクリーンショットに差し替え予定</text>
+</svg>

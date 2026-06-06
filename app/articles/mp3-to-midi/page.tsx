@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ArticleImage } from "@/app/_components/ArticleImage";
 import { RelatedArticles } from "@/app/_components/RelatedArticles";
 
 export const metadata: Metadata = {
@@ -72,6 +73,12 @@ export default function Mp3ToMidiPage() {
               そのため、可能であれば変換前に同じ素材のWAVなど非圧縮形式を用意できると、結果が安定しやすくなります。
             </p>
           </section>
+
+          <ArticleImage
+            src="/images/articles/mp3-to-midi-tool.svg"
+            alt="自動採譜ツールの画面：音声ファイルをアップロードしてMIDIを生成するインターフェイスのスクリーンショット"
+            caption="自動採譜ツール — 音声ファイルをアップロードするだけでMIDIを生成"
+          />
 
           <section>
             <h2 className="mb-3 text-2xl font-semibold">MIDIとは何か</h2>

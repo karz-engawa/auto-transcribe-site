@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ArticleImage } from "@/app/_components/ArticleImage";
 import { RelatedArticles } from "@/app/_components/RelatedArticles";
 
 export const metadata: Metadata = {
@@ -177,6 +178,12 @@ export default function WhatIsMidiArticlePage() {
               </tbody>
             </table>
           </div>
+
+          <ArticleImage
+            src="/images/articles/midi-vs-audio-diagram.svg"
+            alt="音声ファイルとMIDIファイルの違い：左は波形データ（MP3/WAV）、右はピアノロール形式の演奏情報（MIDI）"
+            caption="左：音声ファイル（波形データ）／右：MIDIファイル（演奏情報）"
+          />
 
           <h2>MIDIでできること</h2>
           <p>

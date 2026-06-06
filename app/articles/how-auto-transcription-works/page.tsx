@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ArticleImage } from "@/app/_components/ArticleImage";
 import { RelatedArticles } from "@/app/_components/RelatedArticles";
 
 export const metadata: Metadata = {
@@ -98,6 +99,11 @@ export default function ArticlePage() {
           </p>
 
           <h2>音声からMIDIが作られる大まかな流れ</h2>
+          <ArticleImage
+            src="/images/articles/how-auto-transcription-works-flow.svg"
+            alt="自動採譜の処理フロー：音声ファイルから波形解析、ピッチ推定を経てMIDIデータが生成される流れを示す図"
+            caption="自動採譜の処理フロー（音声ファイル → 波形解析 → ピッチ推定 → MIDIデータ）"
+          />
           <p>
             自動採譜ツールは、内部で次のような処理を順に行っています。
           </p>

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <rect width="800" height="450" fill="#f9fafb" rx="12"/>
+
+  <!-- Window chrome -->
+  <rect x="40" y="40" width="720" height="340" rx="8" fill="white" stroke="#e5e7eb" stroke-width="2"/>
+  <rect x="40" y="40" width="720" height="36" rx="8" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1"/>
+  <circle cx="64" cy="58" r="6" fill="#fc8181"/>
+  <circle cx="84" cy="58" r="6" fill="#fbbf24"/>
+  <circle cx="104" cy="58" r="6" fill="#6ee7b7"/>
+  <text x="400" y="63" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#6b7280">MuseScore — MIDI読み込み</text>
+
+  <!-- Staff lines -->
+  <line x1="80" y1="130" x2="720" y2="130" stroke="#d1d5db" stroke-width="1"/>
+  <line x1="80" y1="142" x2="720" y2="142" stroke="#d1d5db" stroke-width="1"/>
+  <line x1="80" y1="154" x2="720" y2="154" stroke="#d1d5db" stroke-width="1"/>
+  <line x1="80" y1="166" x2="720" y2="166" stroke="#d1d5db" stroke-width="1"/>
+  <line x1="80" y1="178" x2="720" y2="178" stroke="#d1d5db" stroke-width="1"/>
+
+  <!-- Notes -->
+  <ellipse cx="140" cy="154" rx="9" ry="6" fill="#1f2937"/>
+  <line x1="149" y1="154" x2="149" y2="110" stroke="#1f2937" stroke-width="2"/>
+  <ellipse cx="210" cy="142" rx="9" ry="6" fill="#1f2937"/>
+  <line x1="219" y1="142" x2="219" y2="98" stroke="#1f2937" stroke-width="2"/>
+  <ellipse cx="280" cy="166" rx="9" ry="6" fill="#1f2937"/>
+  <line x1="289" y1="166" x2="289" y2="122" stroke="#1f2937" stroke-width="2"/>
+  <ellipse cx="350" cy="142" rx="9" ry="6" fill="#1f2937"/>
+  <line x1="359" y1="142" x2="359" y2="98" stroke="#1f2937" stroke-width="2"/>
+  <ellipse cx="420" cy="154" rx="9" ry="6" fill="#1f2937"/>
+  <line x1="429" y1="154" x2="429" y2="110" stroke="#1f2937" stroke-width="2"/>
+
+  <!-- Placeholder label -->
+  <text x="400" y="290" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#9ca3af" font-weight="bold">MuseScore スクリーンショット</text>
+  <text x="400" y="315" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#9ca3af">※ 実際のスクリーンショットに差し替え予定</text>
+</svg>
